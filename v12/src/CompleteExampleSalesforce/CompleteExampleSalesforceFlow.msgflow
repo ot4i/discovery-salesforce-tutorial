@@ -7,7 +7,10 @@
     <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/CompleteExampleSalesforce/icons/full/obj16/CompleteExampleSalesforceFlow.gif"/>
     <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/CompleteExampleSalesforce/icons/full/obj30/CompleteExampleSalesforceFlow.gif"/>
     <composition>
-      <nodes xmi:type="ComIbmApplicationConnectorRequest_salesforce.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="422,89" applicationConnectorType="salesforce">
+      <nodes xmi:type="ComIbmApplicationConnectorRequest_salesforce.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="422,89" applicationConnectorType="salesforce" action="RETRIEVEALL" businessObject="Contact" displayName="Retrieve contacts" policyUrl="{CompletePolicyProjectSalesforce}:Salesforce1">
+        <filter>
+          <queryProperties limit="10" allowTruncation="false" paginationType="TOKEN"/>
+        </filter>
         <translation xmi:type="utility:ConstantString" string="Salesforce Request"/>
       </nodes>
       <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="420,33">
