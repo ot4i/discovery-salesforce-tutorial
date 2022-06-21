@@ -9,7 +9,7 @@
     <composition>
       <nodes xmi:type="ComIbmApplicationConnectorRequest_salesforce.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="422,89" applicationConnectorType="salesforce" action="RETRIEVEALL" businessObject="Contact" displayName="Retrieve contacts" policyUrl="{CompletePolicyProjectSalesforce}:Salesforce1">
         <filter>
-          <queryProperties limit="10" allowTruncation="false" paginationType="TOKEN"/>
+          <queryProperties limit="1" allowTruncation="true" paginationType="TOKEN"/>
         </filter>
         <translation xmi:type="utility:ConstantString" string="Salesforce Request"/>
       </nodes>
